@@ -1,0 +1,11 @@
+<template name="cards">
+  {{#if Template.subscriptionsReady}}
+   <div class="row">
+    {{#each initech}}
+      {{> charts}}
+    {{/each}}
+  </div>
+  {{else}}
+    Loading...
+  {{/if}}
+</template>
